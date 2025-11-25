@@ -9,6 +9,8 @@ header {
 	width: 100%;
 	padding: 25px 50px;
 	background-color: var(--color-prinicipal-disabled);
+	/* Sombra */
+	box-shadow: 0 10px 5px 5px rgba(0, 0, 0, 0.2);
 }
 header > a {
 	margin-bottom: 0;

@@ -23,12 +23,9 @@ html {
 
 body {
 	position: relative;
-	min-height: calc(100vh - 150px);
 	margin: 150px 50px 0 50px;
-	padding-top: 50px;
 	font-family: "Lato", sans-serif;
 	color: var(--color-texto);
-	background-color: var(--color-neutro);
 }
 
 /* Tipografías */
@@ -63,18 +60,26 @@ a:hover {
 	color: var(--color-principal-hover);
 }
 
+/* Comprobador de imágenes sin atributo alt */
+img:not([alt]) {
+	border: 3px solid red;
+}
+
 /* Main */
 main {
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
-	padding: 0 40px;
+	padding: 30px;
+	margin: 20px auto;
+	background-color: var(--color-neutro);
 }
 
 #principal,
 #contacto {
 	width: 70%;
 	padding: 20px;
+	margin-right: 20px;
 }
 
 article {
@@ -87,10 +92,20 @@ article {
 aside {
 	padding: 20px;
 	width: 30%;
+	margin-top: 20px;
 	background-color: var(--color-blanco);
 	border: 1px solid var(--color-secundario);
 	border-radius: 10px;
 	text-align: right;
+}
+
+a[type="application/pdf"]::after {
+	display: inline-block;
+	content: " ";
+	background-image: url(/assets/images/logo/pdf_512x512.png);
+	width: 16px;
+	height: 16px;
+	margin-left: 5px;
 }
 
 /* Tabla */
@@ -184,4 +199,25 @@ button[type="submit"]:hover {
 	stroke: white;
 	display: block;
 	margin: 10px 0 0 10px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 700px) {
+	main {
+		margin-top: 200px;
+		flex-wrap: wrap;
+	}
+
+	#principal,
+	aside {
+		width: 100%;
+	}
+
+	aside {
+		text-align: left;
+	}
+
+	.fila > label {
+		width: 100%;
+	}
 }
