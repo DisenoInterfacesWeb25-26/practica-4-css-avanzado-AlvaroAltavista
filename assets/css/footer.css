@@ -1,0 +1,27 @@
+footer {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-top: 50px;
+	height: 200px;
+	padding: 0 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--color-principal);
+	color: var(--color-blanco);
+	text-align: center;
+}
+
+#social svg {
+	stroke: var(--color-blanco);
+}
+
+#social svg:hover {
+	stroke: var(--color-principal-hover);
+}
+
+footer a {
+	color: var(--color-blanco);
+}

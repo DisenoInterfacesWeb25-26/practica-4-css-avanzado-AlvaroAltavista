@@ -1,0 +1,89 @@
+/* Estilos de móvil hasta 699px de WV - Diseño Mobile First */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Times New Roman", serif;
+}
+
+div {
+	margin: 10px;
+	background-color: rgb(184, 202, 228);
+	text-align: center;
+	padding: 20px 0;
+}
+
+#cabecera {
+	padding: 30px 0;
+}
+
+#cuerpo {
+	padding: 100px 0;
+}
+
+/* Estilos de tablet, desde 700px hasta 1200px */
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+	body {
+		font-family: "Calibri", sans-serif;
+	}
+
+	#nav2 {
+		display: none;
+	}
+
+	#nav1 {
+		float: left;
+		width: 12.5%;
+		padding: 100px 0;
+	}
+
+	#cuerpo {
+		float: right;
+		width: 81%;
+	}
+
+	#banner {
+		clear: both;
+		float: none;
+	}
+}
+
+/* Estilo para pantalla, más de 1200 px */
+@media screen and (min-width: 1201px) {
+	body {
+		font-family: Arial, sans-serif;
+	}
+
+	#nav1 {
+		float: left;
+		width: 16.5%;
+		padding: 139px 0;
+	}
+
+	main {
+		float: right;
+		width: 81.5%;
+	}
+
+	#nav2 {
+		clear: both;
+	}
+
+	#cuerpo {
+		float: left;
+		width: 80%;
+	}
+
+	#banner {
+		float: right;
+		padding: 100px 0;
+		width: 15%;
+	}
+
+	#footer {
+		clear: both;
+	}
+}
