@@ -1,11 +1,9 @@
 footer {
 	width: 100%;
-	position: absolute;
 	bottom: 0;
 	left: 0;
 	margin-top: 50px;
-	height: 200px;
-	padding: 0 25px;
+	padding: 20px 25px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -24,4 +22,16 @@ footer {
 
 footer a {
 	color: var(--color-blanco);
+}
+
+/* Media queries */
+@media screen and (max-width: 700px) {
+	footer {
+		justify-content: center;
+		flex-wrap: wrap-reverse;
+	}
+
+	footer > * {
+		flex-basis: 100%;
+	}
 }
