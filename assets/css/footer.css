@@ -13,10 +13,12 @@ footer {
 
 #social svg {
 	stroke: var(--color-blanco);
+	transition: 0.5s linear;
 }
 
 #social svg:hover {
 	stroke: var(--color-principal-hover);
+	transform: scale(1.5);
 }
 
 footer a {
