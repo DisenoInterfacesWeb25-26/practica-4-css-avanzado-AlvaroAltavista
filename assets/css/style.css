@@ -94,7 +94,7 @@ article::before {
 	width: 100%;
 	height: 100px;
 	display: inline-block;
-	background-image: url("https://placehold.co/400x100");
+	background-image: url("https://placehold.co/400x100?text=imagen");
 }
 
 aside {

@@ -9,4 +9,8 @@
 	body {
 		margin: 0;
 	}
+
+	article::before {
+		display: none;
+	}
 }
