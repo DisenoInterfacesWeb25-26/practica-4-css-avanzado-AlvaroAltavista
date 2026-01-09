@@ -204,7 +204,7 @@ button[type="submit"]:hover {
 }
 
 #icon-whatsapp {
-	stroke: white;
+	stroke: black;
 	display: block;
 	margin: 10px 0 0 10px;
 }
