@@ -197,6 +197,7 @@ button[type="submit"]:hover {
 	background-color: var(--color-secundario);
 	border-radius: 5px;
 	z-index: 3;
+	color: black;
 }
 
 #whatsapp:hover {
